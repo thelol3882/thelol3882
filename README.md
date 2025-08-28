@@ -1,24 +1,31 @@
-# Hi there! 👋  
+# Hi there! 👋
 
-I love learning new technologies and experimenting with them in my projects.  
-I'm interested in **backend, frontend, mobile development, and DevOps**.
+I'm a **Full-Stack Developer** passionate about building scalable systems and experimenting with modern technologies.
+I work across **backend, frontend, mobile development, and DevOps**, focusing on creating reliable and future-proof architectures.
 
 ---
 
 ### 🔧 Technologies I work with:
-- **Backend**: Django, Django REST Framework, PostgreSQL, Celery, Redis  
-- **Frontend**: React, Next.js, TypeScript  
-- **Mobile Development**: Previously worked with UIKit (can build mid-level projects), now learning React Native for cross-platform apps  
-- **DevOps**: Just getting started – have experience with Docker and Nginx, want to learn more  
+
+* **Backend**: FastAPI, Django, Django REST Framework, PostgreSQL, Redis, Celery, Kafka (event-driven microservices)
+* **Frontend**: Next.js (App Router), React, TypeScript, Redux Toolkit, Mantine UI
+* **Mobile Development**: React Native (Expo) for cross-platform apps, UIKit (past experience)
+* **DevOps**: Docker, Docker Compose, Kubernetes (Helm, Minikube), Traefik, Nginx
+
+  > Currently at a **basic-to-intermediate level**; learning CI/CD to strengthen automation.
 
 ---
 
-### 📌 Currently learning:
-- **React Native** – focusing on cross-platform development  
-- **Next.js** – exploring SSR/SSG  
-- **WebSockets** – want to try real-time features in projects  
-- **CI/CD** – looking to improve deployment automation  
+### 📌 Currently learning & improving:
+
+* **Microservices Architecture** – event-driven design with Kafka, service isolation, idempotency patterns
+* **Kubernetes** – Helm charts, secrets management, scaling strategies
+* **CI/CD** – just starting out, want to improve deployment automation with Jenkins & GitHub Actions
+* **React Native** – polishing mobile UI/UX and animations for real projects
+* **Next.js** – building SSR/SSG apps with strong typing and API integration
 
 ---
 
-⚡ Always curious to learn something new and apply it in practice!  
+⚡ Always curious to learn, experiment, and apply knowledge in real projects!
+
+---
