@@ -1,31 +1,20 @@
-# Hi there! 👋
+# Hi there 👋
 
-I'm a **Full-Stack Developer** passionate about building scalable systems and experimenting with modern technologies.
-I work across **backend, frontend, mobile development, and DevOps**, focusing on creating reliable and future-proof architectures.
+Full-stack developer. I build and operate production web platforms end-to-end — backend, frontend, and the infrastructure they run on.
 
----
+## 🛠 Tech stack
 
-### 🔧 Technologies I work with:
+- **Languages:** Python, Go, TypeScript, SQL
+- **Backend:** Django, DRF, FastAPI, Celery, Django Channels, WebSockets, SSE
+- **Frontend:** Next.js, React, Redux Toolkit / RTK Query, Mantine
+- **Data & Infra:** PostgreSQL, Redis, Docker, Nginx, Cloudflare
+- **Observability & Testing:** OpenTelemetry, Jaeger, Grafana, Prometheus, Vitest, Playwright, Locust
 
-* **Backend**: FastAPI, Django, Django REST Framework, PostgreSQL, Redis, Celery, Kafka (event-driven microservices)
-* **Frontend**: Next.js (App Router), React, TypeScript, Redux Toolkit, Mantine UI
-* **Mobile Development**: React Native (Expo) for cross-platform apps, UIKit (past experience)
-* **DevOps**: Docker, Docker Compose, Kubernetes (Helm, Minikube), Traefik, Nginx
+## 🔧 Tools I've built
 
-  > Currently at a **basic-to-intermediate level**; learning CI/CD to strengthen automation.
+- **luxen** (Go) — config-driven release & deploy CLI: CI gates, semver releases, GHCR images, health-checked deploys, one-command rollback
+- **lexen** (TypeScript, published on npm) — i18n static-analysis CLI for ru/kk/en locales
 
----
+## 🔭 Public work
 
-### 📌 Currently learning & improving:
-
-* **Microservices Architecture** – event-driven design with Kafka, service isolation, idempotency patterns
-* **Kubernetes** – Helm charts, secrets management, scaling strategies
-* **CI/CD** – just starting out, want to improve deployment automation with Jenkins & GitHub Actions
-* **React Native** – polishing mobile UI/UX and animations for real projects
-* **Next.js** – building SSR/SSG apps with strong typing and API integration
-
----
-
-⚡ Always curious to learn, experiment, and apply knowledge in real projects!
-
----
+- [Locomotive Digital Twin](https://github.com/thelol3882/hackathon_nu26) — NU Hackathon 2026: FastAPI microservices, Redis Streams, TimescaleDB, gRPC, full Grafana/Prometheus/Jaeger observability
