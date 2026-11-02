@@ -1,35 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="340" viewBox="0 0 800 340">
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="384" viewBox="0 0 820 384">
+  <defs><pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#fff" opacity=".035"/></pattern></defs>
   <style>
-    text { font: 16px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #e6edf3; white-space: pre; }
-    .p { fill: #3fb950; } .c { fill: #58a6ff; } .m { fill: #8b949e; } .a { fill: #a371f7; } .y { fill: #d29922; }
-    .l { opacity: 0; animation: show 0.01s linear forwards; }
+    text { font: 16px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #d8d8e0; white-space: pre; }
+    .l { opacity: 0; animation: show .01s linear forwards; }
     @keyframes show { to { opacity: 1; } }
     .cur { animation: blink 1s steps(1) infinite; }
     @keyframes blink { 50% { opacity: 0; } }
+    .ga { animation: ga 6s steps(1) infinite; } .gb { animation: gb 6s steps(1) infinite; }
+    .ga, .gb { animation-delay: -6.3s; }
+    @keyframes ga { 0%, 93%, 100% { transform: none; } 94% { transform: translate(-4px,1px); } 96% { transform: translate(2px,-1px); } }
+    @keyframes gb { 0%, 93%, 100% { transform: none; } 94% { transform: translate(4px,-1px); } 96% { transform: translate(-2px,1px); } }
+    @media (prefers-reduced-motion: reduce) { .ga, .gb, .l, .cur { animation: none !important; opacity: 1; } }
   </style>
-
-  <rect x="1" y="1" width="798" height="338" rx="12" fill="#0d1117" stroke="#30363d"/>
-  <path d="M1 13a12 12 0 0 1 12-12h774a12 12 0 0 1 12 12v23H1z" fill="#161b22"/>
-  <circle cx="24" cy="19" r="6" fill="#ff5f57"/>
-  <circle cx="44" cy="19" r="6" fill="#febc2e"/>
-  <circle cx="64" cy="19" r="6" fill="#28c840"/>
-  <text x="400" y="24" text-anchor="middle" class="m" style="font-size:13px">dias@dev: ~</text>
-
-  <text x="24" y="70"  class="l" style="animation-delay:0.3s"><tspan class="p">❯</tspan> whoami</text>
-  <text x="24" y="94"  class="l" style="animation-delay:0.9s"><tspan class="a">dias</tspan> — full-stack developer</text>
-
-  <text x="24" y="130" class="l" style="animation-delay:1.6s"><tspan class="p">❯</tspan> cat focus.txt</text>
-  <text x="24" y="154" class="l" style="animation-delay:2.2s">building &amp; operating production web platforms end-to-end</text>
-
-  <text x="24" y="190" class="l" style="animation-delay:2.9s"><tspan class="p">❯</tspan> ls ~/tools</text>
-  <text x="24" y="214" class="l" style="animation-delay:3.5s"><tspan class="c">luxen/</tspan>  <tspan class="m"># release &amp; deploy CLI (Go)</tspan></text>
-  <text x="24" y="238" class="l" style="animation-delay:3.8s"><tspan class="c">lexen/</tspan>  <tspan class="m"># i18n extraction &amp; validation (TypeScript)</tspan></text>
-
-  <text x="24" y="274" class="l" style="animation-delay:4.5s"><tspan class="p">❯</tspan> echo $STACK</text>
-  <text x="24" y="298" class="l" style="animation-delay:5.1s"><tspan class="y">django · fastapi · next.js · postgres · redis · docker</tspan></text>
-
-  <g class="l" style="animation-delay:5.6s">
-    <text x="24" y="326"><tspan class="p">❯</tspan></text>
-    <rect class="cur" x="44" y="312" width="10" height="18" fill="#e6edf3"/>
+  <path d="M1 1 H795 L819 25 V383 H25 L1 359 Z" fill="#0a0a12" stroke="#5ef6ff" stroke-opacity=".55"/>
+  <path d="M1 1 H795 L819 25 V383 H25 L1 359 Z" fill="url(#scan)"/>
+  <path d="M1 36 H819" stroke="#5ef6ff" stroke-opacity=".3"/>
+  <rect x="16" y="14" width="10" height="10" fill="#ff3b5c"/><rect x="32" y="14" width="10" height="10" fill="#f3e600"/><rect x="48" y="14" width="10" height="10" fill="#5ef6ff"/>
+  <text x="790" y="24" text-anchor="end" style="font-size:12px; letter-spacing:3px; fill:#6a6a7e">NETRUNNER://DIAS@ASTANA</text>
+  <text x="28" y="74" class="l" style="animation-delay:0.90s"><tspan fill="#f3e600">&gt;</tspan> whoami</text>
+  <text x="28" y="98" class="l" style="animation-delay:1.25s"><tspan fill="#ff3b5c">dias</tspan><tspan fill="#d8d8e0"> :: backend engineer · go &amp; python</tspan></text>
+  <text x="28" y="132" class="l" style="animation-delay:1.85s"><tspan fill="#f3e600">&gt;</tspan> cat ./mission.txt</text>
+  <text x="28" y="156" class="l" style="animation-delay:2.20s"><tspan fill="#d8d8e0">build &amp; run production web platforms, end-to-end</tspan></text>
+  <text x="28" y="190" class="l" style="animation-delay:2.80s"><tspan fill="#f3e600">&gt;</tspan> ls ~/quickhacks</text>
+  <text x="28" y="214" class="l" style="animation-delay:3.15s"><tspan fill="#5ef6ff">luxen/  </tspan><tspan fill="#6a6a7e"># release &amp; deploy CLI</tspan></text>
+  <text x="28" y="238" class="l" style="animation-delay:3.50s"><tspan fill="#5ef6ff">lexen/  </tspan><tspan fill="#6a6a7e"># i18n extraction, validation &amp; sorting</tspan></text>
+  <text x="28" y="262" class="l" style="animation-delay:3.85s"><tspan fill="#5ef6ff">bult/   </tspan><tspan fill="#6a6a7e"># self-healing mini-PaaS (wip)</tspan></text>
+  <text x="28" y="296" class="l" style="animation-delay:4.45s"><tspan fill="#f3e600">&gt;</tspan> ping --team backend</text>
+  <text x="28" y="320" class="l" style="animation-delay:4.80s"><tspan fill="#f3e600">reply from dias: ready to jack in</tspan></text>
+  <g class="l" style="animation-delay:5.30s">
+    <text x="28" y="354"><tspan fill="#f3e600">&gt;</tspan></text>
+    <rect class="cur" x="46" y="339" width="10" height="19" fill="#5ef6ff"/>
   </g>
 </svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="230" viewBox="0 0 1220 230">
+  <defs><pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#fff" opacity=".035"/></pattern></defs>
+  <style>
+    .m { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre; }
+    .k { font-family: Rajdhani, Bahnschrift, "DIN Alternate", "Arial Narrow", sans-serif; font-stretch: condensed; font-weight: 700; font-size: 40px; letter-spacing: 2px; }
+    .ga { animation: ga 6s steps(1) infinite; } .gb { animation: gb 6s steps(1) infinite; }
+    .ga, .gb { animation-delay: -5.6s; }
+    @keyframes ga { 0%, 93%, 100% { transform: none; } 94% { transform: translate(-4px,1px); } 96% { transform: translate(2px,-1px); } }
+    @keyframes gb { 0%, 93%, 100% { transform: none; } 94% { transform: translate(4px,-1px); } 96% { transform: translate(-2px,1px); } }
+    @media (prefers-reduced-motion: reduce) { .ga, .gb, .l, .cur { animation: none !important; opacity: 1; } }
+  </style>
+  <path d="M1 1 H1195 L1219 25 V229 H25 L1 205 Z" fill="#0a0a12" stroke="#f3e600" stroke-opacity=".5"/>
+  <path d="M1 1 H1195 L1219 25 V229 H25 L1 205 Z" fill="url(#scan)"/>
+  <rect x="1" y="1" width="6" height="60" fill="#f3e600"/>
+  <text x="28" y="34" class="m" fill="#ff3b5c" style="font-size:12px; letter-spacing:3px">GIG // NU HACKATHON 2026</text>
+  <text x="1188" y="34" class="m" fill="#6a6a7e" text-anchor="end" style="font-size:12px; letter-spacing:3px">PYTHON</text>
+  <g class="k">
+    <text x="27" y="81" fill="#ff3b5c" opacity=".7" class="ga">LOCOMOTIVE DIGITAL TWIN</text>
+    <text x="29" y="79" fill="#5ef6ff" opacity=".7" class="gb">LOCOMOTIVE DIGITAL TWIN</text>
+    <text x="28" y="80" fill="#f3e600">LOCOMOTIVE DIGITAL TWIN</text>
+  </g>
+  <text x="28" y="118" class="m" fill="#d8d8e0" style="font-size:15px">FastAPI microservices streaming 1,700 locomotives through Redis Streams into TimescaleDB,</text><text x="28" y="142" class="m" fill="#d8d8e0" style="font-size:15px">talking gRPC, with full Grafana / Prometheus / Jaeger observability.</text>
+  <rect x="28" y="186" width="79" height="24" fill="#5ef6ff" fill-opacity=".08" stroke="#5ef6ff" stroke-opacity=".6"/><text x="38" y="203" class="m" fill="#5ef6ff" style="font-size:13px">fastapi</text><rect x="114.80000000000001" y="186" width="54" height="24" fill="#5ef6ff" fill-opacity=".08" stroke="#5ef6ff" stroke-opacity=".6"/><text x="124.80000000000001" y="203" class="m" fill="#5ef6ff" style="font-size:13px">grpc</text><rect x="176.4" y="186" width="129" height="24" fill="#5ef6ff" fill-opacity=".08" stroke="#5ef6ff" stroke-opacity=".6"/><text x="186.4" y="203" class="m" fill="#5ef6ff" style="font-size:13px">redis streams</text><rect x="313.6" y="186" width="112" height="24" fill="#5ef6ff" fill-opacity=".08" stroke="#5ef6ff" stroke-opacity=".6"/><text x="323.6" y="203" class="m" fill="#5ef6ff" style="font-size:13px">timescaledb</text><rect x="434.0" y="186" width="79" height="24" fill="#5ef6ff" fill-opacity=".08" stroke="#5ef6ff" stroke-opacity=".6"/><text x="444.0" y="203" class="m" fill="#5ef6ff" style="font-size:13px">grafana</text><rect x="520.8" y="186" width="70" height="24" fill="#5ef6ff" fill-opacity=".08" stroke="#5ef6ff" stroke-opacity=".6"/><text x="530.8" y="203" class="m" fill="#5ef6ff" style="font-size:13px">jaeger</text>
+</svg>

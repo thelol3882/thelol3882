@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="72" viewBox="0 0 1200 72">
+  <style>
+    .k { font-family: Rajdhani, Bahnschrift, "DIN Alternate", "Arial Narrow", sans-serif; font-stretch: condensed; font-size: 38px; font-weight: 700; letter-spacing: 3px; }
+    .m { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; letter-spacing: 3px; }
+    .ga { animation: ga 6s steps(1) infinite; } .gb { animation: gb 6s steps(1) infinite; }
+    .ga, .gb { animation-delay: -1.4s; }
+    @keyframes ga { 0%, 93%, 100% { transform: none; } 94% { transform: translate(-4px,1px); } 96% { transform: translate(2px,-1px); } }
+    @keyframes gb { 0%, 93%, 100% { transform: none; } 94% { transform: translate(4px,-1px); } 96% { transform: translate(-2px,1px); } }
+    @media (prefers-reduced-motion: reduce) { .ga, .gb, .l, .cur { animation: none !important; opacity: 1; } }
+  </style>
+  <rect x="0" y="12" width="10" height="44" fill="#f3e600"/>
+  <text x="28" y="48" class="m" fill="#ff3b5c">02</text>
+  <g class="k">
+    <text x="78" y="51" fill="#ff3b5c" opacity=".7" class="ga">CYBERWARE</text>
+    <text x="80" y="49" fill="#5ef6ff" opacity=".7" class="gb">CYBERWARE</text>
+    <text x="79" y="50" fill="#f3e600">CYBERWARE</text>
+  </g>
+  <text x="1196" y="48" class="m" fill="#6a6a7e" text-anchor="end">INSTALLED MODULES</text>
+  <path d="M0 66 H1150 L1160 56 H1200" fill="none" stroke="#3b1420" stroke-width="1.5"/>
+</svg>

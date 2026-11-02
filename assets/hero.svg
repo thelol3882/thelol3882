@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460">
+  <defs>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#fff" opacity=".035"/></pattern>
+    <linearGradient id="vig" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3e600" stop-opacity=".06"/><stop offset=".4" stop-color="#f3e600" stop-opacity="0"/></linearGradient>
+  </defs>
+  <style>
+    .m { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre; }
+    .k { font-family: Rajdhani, Bahnschrift, "DIN Alternate", "Arial Narrow", sans-serif; font-stretch: condensed; }
+    .lbl { font-size: 12px; letter-spacing: 3px; }
+    .code { font-size: 19px; font-weight: 600; }
+    .l { opacity: 0; animation: show .12s linear forwards; }
+    @keyframes show { to { opacity: 1; } }
+    .band { opacity: 0; animation: band .55s linear forwards; }
+    @keyframes band { 0%, 97% { opacity: .12; } 100% { opacity: 0; } }
+    .timer { transform-box: fill-box; transform-origin: left; animation: drain 3.60s linear .6s forwards; }
+    @keyframes drain { to { transform: scaleX(.22); } }
+    .ga { animation: ga 6s steps(1) infinite; } .gb { animation: gb 6s steps(1) infinite; }
+    @keyframes ga { 0%, 90%, 100% { transform: none; } 91% { transform: translate(-6px,1px); } 94% { transform: translate(3px,-2px); } }
+    @keyframes gb { 0%, 90%, 100% { transform: none; } 91% { transform: translate(5px,-1px); } 94% { transform: translate(-3px,2px); } }
+    .blink { animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .l { animation: none; opacity: 1; } .band { animation: none; }
+      .timer { animation: none; transform: scaleX(.22); } .ga, .gb, .blink { animation: none; }
+    }
+  </style>
+  <rect width="1200" height="460" fill="#0a0a12"/>
+  <rect width="1200" height="460" fill="url(#vig)"/>
+  <rect width="1200" height="460" fill="url(#scan)"/>
+  <path d="M24 24 H1160 L1176 40 V416 H40 L24 400 Z" fill="none" stroke="#3b1420" stroke-width="1.5"/>
+  <path d="M1176 54 V40 M1176 40 H1162" stroke="#f3e600" stroke-width="2"/>
+  <path d="M24 386 V400 M24 400 H38" stroke="#f3e600" stroke-width="2"/>
+  <path d="M444 96 V392 M760 96 V392" stroke="#3b1420"/>
+  <text x="44" y="60" class="m lbl" fill="#f3e600">// JACK_IN</text>
+  <text x="188" y="60" class="m lbl" fill="#6a6a7e">NODE thelol3882 · SUBNET astana.kz</text>
+  <text x="1150" y="60" class="m lbl" fill="#ff3b5c" text-anchor="end">ICE TIMER</text>
+  <rect x="892" y="68" width="258" height="4" fill="#ff3b5c" opacity=".2"/>
+  <rect x="892" y="68" width="258" height="4" fill="#ff3b5c" class="timer"/>
+  <g class="k" style="font-size:108px; font-weight:700; letter-spacing:5px">
+    <text x="44" y="196" fill="#ff3b5c" opacity=".7" class="ga">DIAS</text>
+    <text x="48" y="192" fill="#5ef6ff" opacity=".7" class="gb">DIAS</text>
+    <text x="46" y="194" fill="#f3e600">DIAS</text>
+  </g>
+  <rect x="46" y="210" width="64" height="4" fill="#f3e600"/><rect x="116" y="210" width="12" height="4" fill="#ff3b5c"/>
+  <text x="46" y="244" class="m" fill="#d8d8e0" style="font-size:18px">backend engineer · go &amp; python</text>
+  <text x="46" y="268" class="m" fill="#6a6a7e" style="font-size:15px">astana, kz · utc+5</text>
+  <path d="M46 290 H346 V316 L336 326 H46 Z" fill="#5ef6ff" fill-opacity=".07" stroke="#5ef6ff"/>
+  <text x="60" y="313" class="m" fill="#5ef6ff" style="font-size:14px">STATUS: OPEN TO BACKEND TEAMS<tspan class="blink">█</tspan></text>
+  <text x="46" y="360" class="m lbl" fill="#6a6a7e">CYBERWARE</text>
+  <text x="46" y="382" class="m" fill="#d8d8e0" style="font-size:14px">go · python · postgres · redis · grpc</text>
+  <text x="46" y="402" class="m" fill="#d8d8e0" style="font-size:14px">docker · nginx · opentelemetry</text>
+  <text x="470" y="112" class="m lbl" fill="#f3e600">ACCESS MATRIX</text>
+  <rect x="468" y="122" width="272" height="272" fill="none" stroke="#f3e600" stroke-opacity=".3"/>
+  <rect x="472" y="130" width="264" height="44" fill="#f3e600" class="band" style="animation-delay:0.40s"/>
+  <rect x="580" y="126" width="44" height="264" fill="#f3e600" class="band" style="animation-delay:1.00s"/>
+  <rect x="472" y="286" width="264" height="44" fill="#f3e600" class="band" style="animation-delay:1.55s"/>
+  <rect x="684" y="126" width="44" height="264" fill="#f3e600" class="band" style="animation-delay:2.10s"/>
+  <rect x="472" y="182" width="264" height="44" fill="#f3e600" class="band" style="animation-delay:2.65s"/>
+  <rect x="476" y="126" width="44" height="264" fill="#f3e600" class="band" style="animation-delay:3.20s"/>
+  <g class="m code">
+    <text x="498" y="159" text-anchor="middle" fill="#f3e600" fill-opacity=".55">BD</text>
+    <text x="550" y="159" text-anchor="middle" fill="#f3e600" fill-opacity=".55">BD</text>
+    <text x="602" y="159" text-anchor="middle" fill="#f3e600" fill-opacity=".55">E9</text>
+    <text x="654" y="159" text-anchor="middle" fill="#f3e600" fill-opacity=".55">1C</text>
+    <text x="706" y="159" text-anchor="middle" fill="#f3e600" fill-opacity=".55">BD</text>
+    <text x="498" y="211" text-anchor="middle" fill="#f3e600" fill-opacity=".55">7A</text>
+    <text x="550" y="211" text-anchor="middle" fill="#f3e600" fill-opacity=".55">FF</text>
+    <text x="602" y="211" text-anchor="middle" fill="#f3e600" fill-opacity=".55">1C</text>
+    <text x="654" y="211" text-anchor="middle" fill="#f3e600" fill-opacity=".55">E9</text>
+    <text x="706" y="211" text-anchor="middle" fill="#f3e600" fill-opacity=".55">BD</text>
+    <text x="498" y="263" text-anchor="middle" fill="#f3e600" fill-opacity=".55">7A</text>
+    <text x="550" y="263" text-anchor="middle" fill="#f3e600" fill-opacity=".55">1C</text>
+    <text x="602" y="263" text-anchor="middle" fill="#f3e600" fill-opacity=".55">BD</text>
+    <text x="654" y="263" text-anchor="middle" fill="#f3e600" fill-opacity=".55">BD</text>
+    <text x="706" y="263" text-anchor="middle" fill="#f3e600" fill-opacity=".55">E9</text>
+    <text x="498" y="315" text-anchor="middle" fill="#f3e600" fill-opacity=".55">55</text>
+    <text x="550" y="315" text-anchor="middle" fill="#f3e600" fill-opacity=".55">7A</text>
+    <text x="602" y="315" text-anchor="middle" fill="#f3e600" fill-opacity=".55">1C</text>
+    <text x="654" y="315" text-anchor="middle" fill="#f3e600" fill-opacity=".55">FF</text>
+    <text x="706" y="315" text-anchor="middle" fill="#f3e600" fill-opacity=".55">55</text>
+    <text x="498" y="367" text-anchor="middle" fill="#f3e600" fill-opacity=".55">1C</text>
+    <text x="550" y="367" text-anchor="middle" fill="#f3e600" fill-opacity=".55">FF</text>
+    <text x="602" y="367" text-anchor="middle" fill="#f3e600" fill-opacity=".55">E9</text>
+    <text x="654" y="367" text-anchor="middle" fill="#f3e600" fill-opacity=".55">FF</text>
+    <text x="706" y="367" text-anchor="middle" fill="#f3e600" fill-opacity=".55">BD</text>
+  </g>
+  <g class="l" style="animation-delay:1.00s"><rect x="580" y="134" width="44" height="34" fill="#0a0a12" stroke="#5ef6ff"/><text x="602" y="159" text-anchor="middle" class="m code" fill="#5ef6ff">E9</text></g>
+  <g class="l" style="animation-delay:1.55s"><rect x="580" y="290" width="44" height="34" fill="#0a0a12" stroke="#5ef6ff"/><text x="602" y="315" text-anchor="middle" class="m code" fill="#5ef6ff">1C</text></g>
+  <g class="l" style="animation-delay:2.10s"><rect x="684" y="290" width="44" height="34" fill="#0a0a12" stroke="#5ef6ff"/><text x="706" y="315" text-anchor="middle" class="m code" fill="#5ef6ff">55</text></g>
+  <g class="l" style="animation-delay:2.65s"><rect x="684" y="186" width="44" height="34" fill="#0a0a12" stroke="#5ef6ff"/><text x="706" y="211" text-anchor="middle" class="m code" fill="#5ef6ff">BD</text></g>
+  <g class="l" style="animation-delay:3.20s"><rect x="476" y="186" width="44" height="34" fill="#0a0a12" stroke="#5ef6ff"/><text x="498" y="211" text-anchor="middle" class="m code" fill="#5ef6ff">7A</text></g>
+  <g class="l" style="animation-delay:3.75s"><rect x="476" y="342" width="44" height="34" fill="#0a0a12" stroke="#5ef6ff"/><text x="498" y="367" text-anchor="middle" class="m code" fill="#5ef6ff">1C</text></g>
+  <text x="790" y="112" class="m lbl" fill="#f3e600">BUFFER</text>
+  <rect x="790" y="126" width="52" height="34" fill="none" stroke="#f3e600" stroke-opacity=".45" stroke-dasharray="3 3"/>
+  <text x="816" y="150" text-anchor="middle" class="m code l" fill="#f3e600" style="animation-delay:1.00s">E9</text>
+  <rect x="852" y="126" width="52" height="34" fill="none" stroke="#f3e600" stroke-opacity=".45" stroke-dasharray="3 3"/>
+  <text x="878" y="150" text-anchor="middle" class="m code l" fill="#f3e600" style="animation-delay:1.55s">1C</text>
+  <rect x="914" y="126" width="52" height="34" fill="none" stroke="#f3e600" stroke-opacity=".45" stroke-dasharray="3 3"/>
+  <text x="940" y="150" text-anchor="middle" class="m code l" fill="#f3e600" style="animation-delay:2.10s">55</text>
+  <rect x="976" y="126" width="52" height="34" fill="none" stroke="#f3e600" stroke-opacity=".45" stroke-dasharray="3 3"/>
+  <text x="1002" y="150" text-anchor="middle" class="m code l" fill="#f3e600" style="animation-delay:2.65s">BD</text>
+  <rect x="1038" y="126" width="52" height="34" fill="none" stroke="#f3e600" stroke-opacity=".45" stroke-dasharray="3 3"/>
+  <text x="1064" y="150" text-anchor="middle" class="m code l" fill="#f3e600" style="animation-delay:3.20s">7A</text>
+  <rect x="1100" y="126" width="52" height="34" fill="none" stroke="#f3e600" stroke-opacity=".45" stroke-dasharray="3 3"/>
+  <text x="1126" y="150" text-anchor="middle" class="m code l" fill="#f3e600" style="animation-delay:3.75s">1C</text>
+  <text x="790" y="196" class="m lbl" fill="#f3e600">DAEMONS · CURRENT_PROCESSES</text>
+  <rect x="790" y="210" width="38" height="26" fill="#161620" stroke="#3b1420"/><text x="809" y="228" text-anchor="middle" class="m" fill="#6a6a7e" style="font-size:14px">E9</text>
+  <g class="l" style="animation-delay:2.10s"><rect x="790" y="210" width="38" height="26" fill="#5ef6ff" fill-opacity=".14" stroke="#5ef6ff"/><text x="809" y="228" text-anchor="middle" class="m" fill="#5ef6ff" style="font-size:14px">E9</text></g>
+  <rect x="834" y="210" width="38" height="26" fill="#161620" stroke="#3b1420"/><text x="853" y="228" text-anchor="middle" class="m" fill="#6a6a7e" style="font-size:14px">1C</text>
+  <g class="l" style="animation-delay:2.10s"><rect x="834" y="210" width="38" height="26" fill="#5ef6ff" fill-opacity=".14" stroke="#5ef6ff"/><text x="853" y="228" text-anchor="middle" class="m" fill="#5ef6ff" style="font-size:14px">1C</text></g>
+  <rect x="878" y="210" width="38" height="26" fill="#161620" stroke="#3b1420"/><text x="897" y="228" text-anchor="middle" class="m" fill="#6a6a7e" style="font-size:14px">55</text>
+  <g class="l" style="animation-delay:2.10s"><rect x="878" y="210" width="38" height="26" fill="#5ef6ff" fill-opacity=".14" stroke="#5ef6ff"/><text x="897" y="228" text-anchor="middle" class="m" fill="#5ef6ff" style="font-size:14px">55</text></g>
+  <text x="930" y="222" class="m" fill="#d8d8e0" style="font-size:14px">NOW.BUILDING</text>
+  <text x="930" y="240" class="m" fill="#6a6a7e" style="font-size:11.5px">bult — a self-healing mini-PaaS</text>
+  <text x="1160" y="222" text-anchor="end" class="m l" fill="#5ef6ff" style="font-size:11px; letter-spacing:2px; animation-delay:2.10s">RUNNING</text>
+  <rect x="790" y="272" width="38" height="26" fill="#161620" stroke="#3b1420"/><text x="809" y="290" text-anchor="middle" class="m" fill="#6a6a7e" style="font-size:14px">55</text>
+  <g class="l" style="animation-delay:3.20s"><rect x="790" y="272" width="38" height="26" fill="#5ef6ff" fill-opacity=".14" stroke="#5ef6ff"/><text x="809" y="290" text-anchor="middle" class="m" fill="#5ef6ff" style="font-size:14px">55</text></g>
+  <rect x="834" y="272" width="38" height="26" fill="#161620" stroke="#3b1420"/><text x="853" y="290" text-anchor="middle" class="m" fill="#6a6a7e" style="font-size:14px">BD</text>
+  <g class="l" style="animation-delay:3.20s"><rect x="834" y="272" width="38" height="26" fill="#5ef6ff" fill-opacity=".14" stroke="#5ef6ff"/><text x="853" y="290" text-anchor="middle" class="m" fill="#5ef6ff" style="font-size:14px">BD</text></g>
+  <rect x="878" y="272" width="38" height="26" fill="#161620" stroke="#3b1420"/><text x="897" y="290" text-anchor="middle" class="m" fill="#6a6a7e" style="font-size:14px">7A</text>
+  <g class="l" style="animation-delay:3.20s"><rect x="878" y="272" width="38" height="26" fill="#5ef6ff" fill-opacity=".14" stroke="#5ef6ff"/><text x="897" y="290" text-anchor="middle" class="m" fill="#5ef6ff" style="font-size:14px">7A</text></g>
+  <text x="930" y="284" class="m" fill="#d8d8e0" style="font-size:14px">NOW.LEARNING</text>
+  <text x="930" y="302" class="m" fill="#6a6a7e" style="font-size:11.5px">distributed systems internals</text>
+  <text x="1160" y="284" text-anchor="end" class="m l" fill="#5ef6ff" style="font-size:11px; letter-spacing:2px; animation-delay:3.20s">RUNNING</text>
+  <rect x="790" y="334" width="38" height="26" fill="#161620" stroke="#3b1420"/><text x="809" y="352" text-anchor="middle" class="m" fill="#6a6a7e" style="font-size:14px">7A</text>
+  <g class="l" style="animation-delay:3.75s"><rect x="790" y="334" width="38" height="26" fill="#5ef6ff" fill-opacity=".14" stroke="#5ef6ff"/><text x="809" y="352" text-anchor="middle" class="m" fill="#5ef6ff" style="font-size:14px">7A</text></g>
+  <rect x="834" y="334" width="38" height="26" fill="#161620" stroke="#3b1420"/><text x="853" y="352" text-anchor="middle" class="m" fill="#6a6a7e" style="font-size:14px">1C</text>
+  <g class="l" style="animation-delay:3.75s"><rect x="834" y="334" width="38" height="26" fill="#5ef6ff" fill-opacity=".14" stroke="#5ef6ff"/><text x="853" y="352" text-anchor="middle" class="m" fill="#5ef6ff" style="font-size:14px">1C</text></g>
+  <text x="930" y="346" class="m" fill="#d8d8e0" style="font-size:14px">NOW.SHIPPING</text>
+  <text x="930" y="364" class="m" fill="#6a6a7e" style="font-size:11.5px">release tooling, boring deploys</text>
+  <text x="1160" y="346" text-anchor="end" class="m l" fill="#5ef6ff" style="font-size:11px; letter-spacing:2px; animation-delay:3.75s">RUNNING</text>
+  <g class="l" style="animation-delay:4.20s">
+    <text x="790" y="404" class="m" fill="#5ef6ff" style="font-size:15px; letter-spacing:2px">ACCESS GRANTED · 3/3 DAEMONS LIVE</text>
+  </g>
+  <text x="44" y="446" class="m" fill="#6a6a7e" style="font-size:11px; letter-spacing:2px">SYS.OK · UPTIME 99.9% · NO PANICS TODAY</text>
+</svg>
