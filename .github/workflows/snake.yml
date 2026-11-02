@@ -20,12 +20,13 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/snake-raw.svg?color_snake=#f3e600&color_dots=#161620,#3b1420,#6b1c2a,#ff3b5c,#5ef6ff&color_dot_border=#ffffff08&color_background=#0a0a12
+            snake-raw.svg?color_snake=#f3e600&color_dots=#161620,#3b1420,#6b1c2a,#ff3b5c,#5ef6ff&color_dot_border=#ffffff08&color_background=#0a0a12
 
       - name: Wrap snake in the cyberpunk frame
         run: |
-          python3 .github/scripts/frame_snake.py dist/snake-raw.svg dist/snake-cyber.svg
-          rm dist/snake-raw.svg
+          mkdir -p dist
+          python3 .github/scripts/frame_snake.py snake-raw.svg dist/snake-cyber.svg
+          rm snake-raw.svg
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
